@@ -10,8 +10,7 @@ import sitemap._
 import Loc._
 import mapper._
 
-import ca.dualityStudios.liftAuthentication._
-import ca.dualityStudios.liftAuthentication.model._
+import code.model._
 
 /**
  * A class that's instantiated early and run.  It allows the application
