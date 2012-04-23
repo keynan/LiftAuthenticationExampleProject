@@ -1,6 +1,6 @@
 package code.snippet
 
-import ca.dualityStudios.liftAuthentication.model._
+import code.model._
 import ca.dualityStudios.liftAuthentication._
 import net.liftweb.http._
 

@@ -1,3 +1,5 @@
+import com.github.siasia.PluginKeys._
+import com.github.siasia.WebPlugin._
 import sbt._
 import Keys._
 
@@ -20,7 +22,7 @@ object Dependencies {
   
 	val lift_webkit = "net.liftweb" %% "lift-webkit" % liftVersion % "compile"
 	val lift_mapper = "net.liftweb" %% "lift-mapper" % liftVersion % "compile"
-	val jetty = "org.mortbay.jetty" % "jetty" % "6.1.26" % "test"
+	val jetty = "org.mortbay.jetty" % "jetty" % "6.1.22" % "container"
 	val junit = "junit" % "junit" % "4.7" % "test"
 	val testing_tools = "org.scala-tools.testing" %% "specs" % "1.6.9" % "test"
   val logbackclassic = "ch.qos.logback" % "logback-classic"  % logbackVer
@@ -55,7 +57,7 @@ object LiftProject extends Build {
 				testing_tools,
 				logbackclassic
 				
-			)) 
+			)) ++ webSettings
   ) dependsOn(liftAuth)
 
   
